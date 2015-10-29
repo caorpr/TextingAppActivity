@@ -8,7 +8,8 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.view.View;
 import android.widget.Toast;
-import android.widget.Sms;
+import android.telephony.SmsManager;
+
 
 public class UpdateTextingActivity extends Activity
 {
@@ -80,7 +81,8 @@ public class UpdateTextingActivity extends Activity
         });
     }
 
-    private void sendSMS(String messageAddress, String messageContext)
+    private void sendSMS(String messageAddress, String messageContent)
+
     {
         SmsManager mySMSManager = SmsManager.getDefault();
         mySMSManager.sendTextMessage(messageAddress, null, messageContent, null, null);
