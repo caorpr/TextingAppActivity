@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.Toast;
 import android.telephony.SmsManager;
-
+import java.util.ArrayList;
 
 public class UpdateTextingActivity extends Activity
 {
@@ -18,6 +18,9 @@ public class UpdateTextingActivity extends Activity
     private EditText SendField;
     private EditText NumberField;
     private Button Send;
+    private Button Thomas;
+    private Button Clayton;
+    private ArrayList ContactList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,6 +31,14 @@ public class UpdateTextingActivity extends Activity
         SendField = (EditText) findViewById(R.id.SendField);
         NumberField = (EditText) findViewById(R.id.NumberField);
         Send = (Button) findViewById(R.id.Send);
+        Thomas = (Button) findViewById (R.id.Thomas);
+        Clayton = (Button) findViewById (R.id.Clayton);
+        ContactList = (new ArrayList());
+
+        ContactList.add("Hello Thomas.");
+        ContactList.add("Hello Clayton.");
+
+
 
         setupListeners();
     }
@@ -79,7 +90,31 @@ public class UpdateTextingActivity extends Activity
                 }
             }
         });
+
+        Thomas.setOnClickListener(new View.OnClickListener()
+        {
+
+            public void onClick(View currentView) {
+                NumberField.setText("8018088495");
+                SendField.setText(ContactList.get(0).toString());
+
+            }
+
+        });
+
+
+        Clayton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View currentView) {
+                NumberField.setText("8018088495");
+                SendField.setText(ContactList.get(1).toString());
+
+            }
+
+
+        });
     }
+
 
     private void sendSMS(String messageAddress, String messageContent)
 
