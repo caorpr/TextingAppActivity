@@ -11,6 +11,9 @@ import android.widget.Toast;
 import android.telephony.SmsManager;
 import java.util.ArrayList;
 
+/**
+ * @author Ariana Fairbanks
+ */
 public class UpdateTextingActivity extends Activity
 {
 
@@ -20,7 +23,7 @@ public class UpdateTextingActivity extends Activity
     private Button Send;
     private Button Thomas;
     private Button Clayton;
-    private ArrayList ContactList;
+    private ArrayList<String> ContactList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
