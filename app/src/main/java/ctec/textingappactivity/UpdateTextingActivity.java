@@ -11,6 +11,9 @@ import android.widget.Toast;
 import android.telephony.SmsManager;
 import java.util.ArrayList;
 
+/**
+ * @author Ariana Fairbanks
+ */
 public class UpdateTextingActivity extends Activity
 {
 
