@@ -9,7 +9,11 @@
                 tools:context="ctec.textingappactivity.UpdateTextingActivity"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:background="#6ed3cf">
+=======
+                android:background="#0080ff">
+>>>>>>> origin/master
 =======
                 android:background="#0080ff">
 >>>>>>> origin/master
@@ -128,6 +132,9 @@
         android:layout_alignEnd="@+id/SendField"
         android:layout_below="@+id/Thomas" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
