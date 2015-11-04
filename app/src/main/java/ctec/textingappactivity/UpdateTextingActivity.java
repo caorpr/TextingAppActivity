@@ -1,5 +1,7 @@
 package ctec.textingappactivity;
 
+
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,13 +13,15 @@ import android.widget.Toast;
 import android.telephony.SmsManager;
 import java.util.ArrayList;
 
+
+
 /**
  * @author Ariana Fairbanks
  */
 public class UpdateTextingActivity extends Activity
 {
 
-    private EditText RecieveField;
+    private EditText RecieveField;  // Not used yet.
     private EditText SendField;
     private EditText NumberField;
     private Button Send;
