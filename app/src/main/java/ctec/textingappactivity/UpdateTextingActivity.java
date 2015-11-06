@@ -1,8 +1,5 @@
 package ctec.textingappactivity;
 
-/**
- * Imports all the stuff we think we will need.
- */
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,9 +12,19 @@ import android.widget.Toast;
 import android.telephony.SmsManager;
 import java.util.ArrayList;
 
+
+
+
 /**
- *  Declares GUI elements.
+ *  @author Ariana Fairbanks
+ *  @author Clayton Anderson
  */
+
+
+/**
+ * Declaration section.
+ */
+
 
 public class UpdateTextingActivity extends Activity
 {
