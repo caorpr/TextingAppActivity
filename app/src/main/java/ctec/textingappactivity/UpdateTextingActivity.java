@@ -14,11 +14,18 @@ import android.telephony.SmsManager;
 public class UpdateTextingActivity extends Activity
 {
 
+    /**
+     * Setting up all of the GUI
+     */
     private EditText RecieveField;
     private EditText SendField;
     private EditText NumberField;
     private Button Send;
 
+    /**
+     * Sets up gui, setuplisteners, and onCreate Method.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -32,6 +39,11 @@ public class UpdateTextingActivity extends Activity
         setupListeners();
     }
 
+    /**
+     * Adds items to the action bar...?
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -39,6 +51,12 @@ public class UpdateTextingActivity extends Activity
         getMenuInflater().inflate(R.menu.menu_update_texting, menu);
         return true;
     }
+
+    /**
+     * Handles the action bar items...?
+     * @param item
+     * @return
+     */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
@@ -56,6 +74,10 @@ public class UpdateTextingActivity extends Activity
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * Sets up all of the GUI components for when they are "activated"
+     */
 
     private void setupListeners()
     {
@@ -80,6 +102,12 @@ public class UpdateTextingActivity extends Activity
             }
         });
     }
+
+    /**
+     * Sends a typed in message to an inputed number.
+     * @param messageAddress
+     * @param messageContent
+     */
 
     private void sendSMS(String messageAddress, String messageContent)
 
